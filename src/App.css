@@ -1,0 +1,75 @@
+main {
+    padding: 2em;
+    width: 500px;
+    height: 500px;
+    background: #F5F5F5;
+    border-radius: .9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.dice-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.die {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.green-die,
+.green-die h2 {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: green;
+}
+
+.title {
+    font-size: 40px;
+    margin: 0;
+}
+
+.instructions {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
+}
+
+.die-numb {
+    font-size: 2rem;
+    background: white;
+}
+
+.roll-dice-btn {
+    font-size: 1.2rem;
+    background: rgb(8, 0, 247);
+    color: white;
+    padding: .5em 1.8em;
+    border-radius: .3rem;
+    border: none;
+}
+
+.times-clicked {
+    text-align: center;
+}
